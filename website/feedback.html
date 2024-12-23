@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>website</title>
+    <link rel="stylesheet" href="style  .css">
+</head>
+<body>
+    <div class="jpg">
+        <div class="narbar">
+            <div class="icon">
+                <h2 class="logo">Indigenous People</h2>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="home1.html">Home</a></li>
+                    <li><a href="index.html">Introduce</a></li>
+                    <li><a href="calture.html">Culture</a></li>
+                    <li><a href="living.html">Living</a></li>
+                    <li><a href="language.html">Language</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                </ul>
+            </div>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            <div class="feed">
+
+                
+              
+                <form id="feedbackForm" onsubmit="return submitFeedback(event)">
+                  <label for="name">Your Name:</label>
+                  <input type="text" id="name" name="name" required><br><br>
+              
+                  <label for="email">Your Email:</label>
+                  <input type="email" id="email" name="email" required><br><br>
+              
+                  <label for="rating">Rating:</label>
+                  <select id="rating" name="rating" required>
+                    <option value="">Select a rating</option>
+                    <option value="1">1 - Poor</option>
+                    <option value="2">2 - Fair</option>
+                    <option value="3">3 - Good</option>
+                    <option value="4">4 - Very Good</option>
+                    <option value="5">5 - Excellent</option>
+                  </select><br><br>
+              
+                  <label for="comments">Comments:</label><br>
+                  <textarea id="comments" name="comments" rows="14" cols="50"></textarea><br><br>
+              
+                  <button type="submit">Submit Feedback</button>
+                </form>
+              
+                <div id="confirmationMessage" style="display:none; margin-top: 20px; color: green;">
+                  <h3>Thank you for your feedback!</h3>
+                </div>
+              
+                <script src="script.js"></script>
+              
+              </div>
+              </html>
